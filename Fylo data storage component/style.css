@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: hsl(229, 57%, 11%) left 100% / 100% 50%  url("assets/images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    caret-color: transparent;
+}
+.section1{
+    background: hsl(228, 56%, 26%);
+    padding: 40px;
+    width:400px;
+    border-radius: 15px;
+    border-top-right-radius: 120px;
+    margin-right: 40px;
+}
+.section2{
+    background: hsl(228, 56%, 26%);
+    width:500px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+    position: relative;
+}
+.bar{
+    width:440px;
+    height:20px;
+    background: hsl(229, 57%, 11%);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.colored-div{
+    width:320px;
+    height:14px;
+    border-radius: 20px;
+    background:linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.dot{
+    height:13px;
+    width:13px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 1px;
+}
+.storage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-bottom: 20px
+}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 14px;
+    color: hsl(229, 7%, 55%);
+    margin-left: 5px;
+}
+h3,span{
+    color:white
+}
+span{
+    font-weight: 600;
+}
+p{
+    color: hsl(243, 100%, 93%);
+}
+.icon-folder, .icon-upload, .icon-document{
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.icon-folder{
+    padding: 12px 10px;
+}
+.icon-document{
+    padding: 10px 13px;
+}
+.icon-upload{
+    padding: 14px 10px;
+}
+.cloud{
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    position: absolute;
+    padding:15px 20px;
+    right:7%;
+    top:-28%
+}
+.triangle{
+    background: white;
+    position: absolute;
+    height:30px;
+    width:20px;
+    border-bottom-left-radius: 100%;
+    right:7%;
+    top:5%
+}
+@media(max-width:500px){
+    body{
+        flex-direction: column;
+        background: hsl(229, 57%, 11%) url("assets/images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section1{
+        margin-right:0px;
+        margin-bottom:20px;
+        width:370px;
+    }
+    .section2{
+        width:370px;
+        margin-top: 0px;
+        padding-bottom: 40px;
+    }
+    h1{
+        font-size: 35px;
+        margin-right: 5px;
+    }
+    p{
+        text-align: center;
+    }
+    .icon-document, .icon-folder, .icon-upload{
+        width:50px
+    }
+    .bar{
+        width:315px;
+    }
+    .colored-div{
+        width:250px;
+    }
+    .cloud{
+      top:80%;
+      right:29%;
+      padding: 20px 30px;
+    }
+    .triangle{
+        display: none;
+    }
+}
